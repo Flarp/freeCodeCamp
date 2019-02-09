@@ -76,30 +76,6 @@ const first_ten = []
 
 </div>
 
-### Before Test
-<div id="js-setup">
-
-```js
-// from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
-const horrid_shuffler = list => list.sort(_ => 0.5 - Math.random())
-const RandList = function(list) {
-  this[Symbol.iterator] = function() {
-    this.list = horrid_shuffler(list)
-    this.index = 0
-    return {
-      next: () => {
-        if (this.index === this.list.length) {
-          return { done: true }
-        } else {
-          return {value: this.list[this.index++] done: false }
-        }
-      }
-    }
-  }
-}
-```
-</div>
-
 </section>
 
 ## Solution
