@@ -46,6 +46,7 @@ for (let y = 0; y < 3; y++) {
 
 ### Before Test
 <div id="js-setup">
+
 ```js
 // from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 const horrid_shuffler = list => list.sort(_ => 0.5 - Math.random())
