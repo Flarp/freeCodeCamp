@@ -11,15 +11,15 @@ You're probably rather perplexed right now and that's OK! Iterators are strange 
 
 Before we get to any of the cooler things we have to start small; <i>Iterables</i>. Iterables are functions that return Iterators and are stored in Object prototypes as <code>Symbol.iterator</code>. To introduce this syntax the hidden code of the previous lesson is now visible in the working area in a comment. If you are unfamiliar with the <code>this</code>-syntax or the concept of Constructors <a href='https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/object-oriented-programming/define-a-constructor-function'>this lesson</a> will help you out.
 
-The setup is a little complicated there's a lot of nesting involved so we're going to break it down line-by-line.
+The setup is a little complicated; there's a lot of nesting involved so we're going to break it down line-by-line.
 
 The first line defines the <code>RandList</code> constructor which takes one parameter <code>list</code>. The second line defines a property of the returned Object called <code>Symbol.iterator</code> (Note that Symbol.iterator is not a string it's a variable). This is where the relevant Iterator portion begins.
 
 The next two lines are some initialization for iterating. <code>this.list</code> is the constructor input <code>list</code> shuffled around randomly and <code>this.index</code> is analogous to <code>x</code> in a C-style for loop (<code> for (let x = ...) { ... }</code>) which makes it easier to keep track of our randomized list.
 
-Moving forward we hit our first return. Take note that the return is nested inside <code>this[Symbol.iterator]</code> and the function <code>RandList</code> does not return a value due to the definition of a constructor. The Iterator function returns an Object with a single method <code>next</code>. This function takes no parameters and increments <code>this.index</code> if the end of the list hasn't been reached. Take note of the structure of the returned Object <code>{ value: ... done: Boolean }</code> as this is <strong>crucial</strong> in getting your Iterator to work! If you forget to set <code>done</code> to <code>true</code> at the end your iterator will run <strong><i>forever!</i></strong>
+Moving forward we hit our first return. Take note that the return is nested inside <code>this[Symbol.iterator]</code> and the function <code>RandList</code> does not return a value due to the definition of a constructor. The Iterator function returns an Object with a single method <code>next</code>. This function takes no parameters and increments <code>this.index</code> if the end of the list hasn't been reached. Take note of the structure of the returned Object <code>{ value: ... done: Boolean }</code> as this is <strong>crucial</strong> in getting your Iterator to work! If you forget to set <code>done</code> to <code>true</code> at the end, your iterator will run <strong><i>forever!</i></strong>
 
-Understandably this example might seem like nothing more than an overcomplicated for-loop. While this is true it lays the foundation for some incredibly powerful features.
+Understandably this example might seem like nothing more than an overcomplicated for-loop. This is oversimplification; Iterators lay the foundation for some incredibly powerful features.
 
 </section>
 
