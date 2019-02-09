@@ -34,7 +34,7 @@ Using the syntax below define a constructor <code>BackList</code> that takes an 
 ```yml
 tests:
   - text: Iterating over <code>BackList([1,2,3,4,5])</code> should return <code>[5,4,3,2,1]<code>.
-    testString: assert(test === [5,4,3,2,1], JSON.stringify(test))
+    testString: assert(Array.from(new BackList([1,2,3,4,5])) === [5,4,3,2,1], JSON.stringify(test))
 ```
 
 </section>
