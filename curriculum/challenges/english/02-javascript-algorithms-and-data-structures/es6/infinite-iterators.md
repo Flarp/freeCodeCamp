@@ -8,7 +8,7 @@ challengeType: 1
 <section id='description'>
 In the last lesson, we were very careful to make sure our Iterator terminated.
   
-<i>What if it doesn't?</i> What if we wanted an Iterator that goes on forever, constantly computing values only when we want it to? Can Iterators be paused, and returned to later?",
+<i>What if it doesn't?</i> What if we wanted an Iterator that goes on forever, constantly computing values only when we want it to? Can Iterators be paused, and returned to later?
 
 By using a little code inspection and some cleverness, we most certainly can! A little more code is required than our previous examples, but that's OK! We'll be able to use a neat shortcut later on, but for now, it's nice to see what we're actually doing under the hood.
 
@@ -18,7 +18,7 @@ First, we construct the Iterable as usual.
 <code>const iterable = new FibIter()</code>
 
 Next, we extract the Iterator inside into its own Object.
-<code>let iterator = new iterable[Symbol.iterator]()</code>
+<code>let iterator = new iterable\[Symbol.iterator\]()</code>
 Finally, we manually move the iterator forward using the <code>next</code> method defined in it. Since <code>next</code> returns an Object, we can access the value returned with the <code>value</code> property.
 <code>iterator.next().value</code>
 
