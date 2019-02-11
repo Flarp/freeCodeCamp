@@ -50,6 +50,10 @@ const iter_array = [1,2,3,4]
 for (let x of iter_array) {
   console.log(x)
 }
+
+// we can even steal a value from an array
+const iterator_array = iter_array[Symbol.iterator]()
+console.log(iterator_array.next().value)
 ```
 
 </div>
