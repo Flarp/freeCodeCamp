@@ -8,7 +8,7 @@ challengeType: 1
 <section id='description'>
 Throughout the entirety of freeCodeCamp, your experience with JavaSCript functions has probably been consistent: data goes in once, data comes out once.
   
-<br>
+<br><br>
 
 *Once.*
   
