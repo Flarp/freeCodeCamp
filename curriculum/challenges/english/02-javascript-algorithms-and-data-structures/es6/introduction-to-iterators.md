@@ -7,9 +7,7 @@ challengeType: 1
 ## Description
 <section id='description'>
 Throughout the entirety of freeCodeCamp, your experience with JavaSCript functions has probably been consistent: data goes in once, data comes out once.
-  
 <br><br>
-
 *Once.*
   
 Generators, one of the most anticipated additions in ES6, totally disregard this concept in favor of a much different paradigm. 
