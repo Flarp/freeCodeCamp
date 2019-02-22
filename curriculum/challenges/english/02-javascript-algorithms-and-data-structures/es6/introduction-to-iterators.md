@@ -1,14 +1,16 @@
 ---
-id: 587d7b87367417b2b2512b5d
-title: Applications of Iterators
+id: 587d7b87367417b2b2512b5e
+title: Introduction to Generators
 challengeType: 1
 ---
 
 ## Description
 <section id='description'>
-Throughout the entirety of freeCodeCamp, your experience with functions has probably been consistent: data goes in once, data comes out once.
-
+Throughout the entirety of freeCodeCamp, your experience with JavaSCript functions has probably been consistent: data goes in once, data comes out once.
+<br>
 *Once.*
+  
+Generators, one of the most anticipated additions in ES6, totally disregard this concept in favor of a much different paradigm. 
 </section>
 
 ## Instructions
