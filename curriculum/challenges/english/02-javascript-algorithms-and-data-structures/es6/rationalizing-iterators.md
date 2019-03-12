@@ -9,7 +9,7 @@ challengeType: 1
 You're probably rather perplexed right now and that's OK! Iterators are strange they take something that JavaScript developers have been accustomed to since the start of the language and allow it to be modified in unusual ways. This isn't a bad thing though! Iterators have a lot going for them as many upcoming JavaScript features build upon them as well. We'll find out more about this in upcoming lessons.
 
 
-Before we get to any of the cooler things we have to start small; <i>Iterables</i>. Iterables are functions that return Iterators and are stored in Object prototypes as <code>Symbol.iterator</code>. To introduce this syntax the hidden code of the previous lesson is now visible in the working area in a comment. If you are unfamiliar with the <code>this</code>-syntax or the concept of Constructors <a href='https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/object-oriented-programming/define-a-constructor-function'>this lesson</a> will help you out.
+Before we get to any of the cooler things we have to start small; <i>Iterables</i>. Iterables are functions that return Iterators and are stored in Object prototypes as <code>Symbol.iterator</code>. To introduce this syntax the hidden code of the previous lesson is now visible in the working area in a comment. If you are unfamiliar with the <code>this</code>-syntax or the concept of Constructors, <a href='https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/object-oriented-programming/define-a-constructor-function'>this lesson</a> will help you out.
 
 The setup is a little complicated; there's a lot of nesting involved so we're going to break it down line-by-line.
 
