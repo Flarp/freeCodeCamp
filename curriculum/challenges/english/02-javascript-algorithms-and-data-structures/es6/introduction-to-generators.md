@@ -12,12 +12,12 @@ But what if you could pause a function, and pick back up in the same place later
   
 Generators, one of the most anticipated additions in ES6, do just this. It also radically changes the syntax of JavaScript through the addition of `function*`, the proper way of defining a generator function.
 
-
+Using a new keyword called `yield`, generator functions can be paused without losing their state (all the variables stored within them stay put!) and resumed at a later time. `yield` doesn't replace `return` however, but that will be covered later on. 
 </section>
 
 ## Instructions
 <section id='instructions'>
-Simply run the below code and check your console.
+Run the demonstration below to get an idea of how generators work.
 </section>
 
 ## Tests
