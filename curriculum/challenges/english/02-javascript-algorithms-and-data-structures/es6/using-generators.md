@@ -24,7 +24,7 @@ Simply run the below code and check your console.
 ```yml
 tests:
   - text: Run the given code to move on.
-    testString: assert(true, 'if you manage to mess this up delete your computer')
+    testString: assert(, 'if you manage to mess this up delete your computer')
 ```
 
 </section>
