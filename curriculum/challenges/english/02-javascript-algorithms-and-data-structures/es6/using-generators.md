@@ -24,7 +24,7 @@ Simply run the below code and check your console.
 ```yml
 tests:
   - text: Run the given code to move on.
-    testString: assert(, 'if you manage to mess this up delete your computer')
+    testString: assert(((() => {let z = fob();for (let x = 0; x < 4; x++) {z.next()};return z.next().value})()) === 5 , 'The fifth value returned from the Fibonacci iterator is correct')
 ```
 
 </section>
