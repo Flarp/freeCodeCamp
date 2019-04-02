@@ -7,15 +7,11 @@ challengeType: 1
 ## Description
 <section id='description'>
 Generator functions indicate where they can be paused using the `yield` keyword. If you have completed any of the debugging lessons, you can think of this as a breakpoint.
-  
-Being able to resume functions is incredibly useful when you need to run portions of a functon across code, but not all at once. 
-
-Using what you learned in the last iterator lesson and the previous generator lesson, make an infinite generator that computes the Fibonacci sequence up to the fifth value.
 </section>
 
 ## Instructions
 <section id='instructions'>
-Simply run the below code and check your console.
+Using what you learned in the last iterator lesson and the previous generator lesson, make an infinite generator that computes the Fibonacci sequence up to the fifth value.
 </section>
 
 ## Tests
